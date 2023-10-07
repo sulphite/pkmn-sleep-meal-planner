@@ -1,0 +1,252 @@
+[
+  {
+     "Dish Lv":1,
+     "Multiplier":1.00,
+     "%":"0%"
+  },
+  {
+     "Dish Lv":2,
+     "Multiplier":1.02,
+     "%":"2%"
+  },
+  {
+     "Dish Lv":3,
+     "Multiplier":1.04,
+     "%":"4%"
+  },
+  {
+     "Dish Lv":4,
+     "Multiplier":1.06,
+     "%":"6%"
+  },
+  {
+     "Dish Lv":5,
+     "Multiplier":1.08,
+     "%":"8%"
+  },
+  {
+     "Dish Lv":6,
+     "Multiplier":1.09,
+     "%":"9%"
+  },
+  {
+     "Dish Lv":7,
+     "Multiplier":1.11,
+     "%":"11%"
+  },
+  {
+     "Dish Lv":8,
+     "Multiplier":1.13,
+     "%":"13%"
+  },
+  {
+     "Dish Lv":9,
+     "Multiplier":1.16,
+     "%":"16%"
+  },
+  {
+     "Dish Lv":10,
+     "Multiplier":1.18,
+     "%":"18%"
+  },
+  {
+     "Dish Lv":11,
+     "Multiplier":1.19,
+     "%":"19%"
+  },
+  {
+     "Dish Lv":12,
+     "Multiplier":1.21,
+     "%":"21%"
+  },
+  {
+     "Dish Lv":13,
+     "Multiplier":1.23,
+     "%":"23%"
+  },
+  {
+     "Dish Lv":14,
+     "Multiplier":1.24,
+     "%":"24%"
+  },
+  {
+     "Dish Lv":15,
+     "Multiplier":1.26,
+     "%":"26%"
+  },
+  {
+     "Dish Lv":16,
+     "Multiplier":1.28,
+     "%":"28%"
+  },
+  {
+     "Dish Lv":17,
+     "Multiplier":1.3,
+     "%":"30%"
+  },
+  {
+     "Dish Lv":18,
+     "Multiplier":1.31,
+     "%":"31%"
+  },
+  {
+     "Dish Lv":19,
+     "Multiplier":1.33,
+     "%":"33%"
+  },
+  {
+     "Dish Lv":20,
+     "Multiplier":1.35,
+     "%":"35%"
+  },
+  {
+     "Dish Lv":21,
+     "Multiplier":1.37,
+     "%":"37%"
+  },
+  {
+     "Dish Lv":22,
+     "Multiplier":1.4,
+     "%":"40%"
+  },
+  {
+     "Dish Lv":23,
+     "Multiplier":1.42,
+     "%":"42%"
+  },
+  {
+     "Dish Lv":24,
+     "Multiplier":1.45,
+     "%":"45%"
+  },
+  {
+     "Dish Lv":25,
+     "Multiplier":1.47,
+     "%":"47%"
+  },
+  {
+     "Dish Lv":26,
+     "Multiplier":1.5,
+     "%":"50%"
+  },
+  {
+     "Dish Lv":27,
+     "Multiplier":1.52,
+     "%":"52%"
+  },
+  {
+     "Dish Lv":28,
+     "Multiplier":1.55,
+     "%":"55%"
+  },
+  {
+     "Dish Lv":29,
+     "Multiplier":1.58,
+     "%":"58%"
+  },
+  {
+     "Dish Lv":30,
+     "Multiplier":1.61,
+     "%":"61%"
+  },
+  {
+     "Dish Lv":31,
+     "Multiplier":1.64,
+     "%":"64%"
+  },
+  {
+     "Dish Lv":32,
+     "Multiplier":1.67,
+     "%":"67%"
+  },
+  {
+     "Dish Lv":33,
+     "Multiplier":1.7,
+     "%":"70%"
+  },
+  {
+     "Dish Lv":34,
+     "Multiplier":1.74,
+     "%":"74%"
+  },
+  {
+     "Dish Lv":35,
+     "Multiplier":1.77,
+     "%":"77%"
+  },
+  {
+     "Dish Lv":36,
+     "Multiplier":1.81,
+     "%":"81%"
+  },
+  {
+     "Dish Lv":37,
+     "Multiplier":1.84,
+     "%":"84%"
+  },
+  {
+     "Dish Lv":38,
+     "Multiplier":1.88,
+     "%":"88%"
+  },
+  {
+     "Dish Lv":39,
+     "Multiplier":1.92,
+     "%":"92%"
+  },
+  {
+     "Dish Lv":40,
+     "Multiplier":1.96,
+     "%":"96%"
+  },
+  {
+     "Dish Lv":41,
+     "Multiplier":2,
+     "%":"100%"
+  },
+  {
+     "Dish Lv":42,
+     "Multiplier":2.04,
+     "%":"104%"
+  },
+  {
+     "Dish Lv":43,
+     "Multiplier":2.08,
+     "%":"108%"
+  },
+  {
+     "Dish Lv":44,
+     "Multiplier":2.13,
+     "%":"113%"
+  },
+  {
+     "Dish Lv":45,
+     "Multiplier":2.17,
+     "%":"117%"
+  },
+  {
+     "Dish Lv":46,
+     "Multiplier":2.22,
+     "%":"122%"
+  },
+  {
+     "Dish Lv":47,
+     "Multiplier":2.27,
+     "%":"127%"
+  },
+  {
+     "Dish Lv":48,
+     "Multiplier":2.32,
+     "%":"132%"
+  },
+  {
+     "Dish Lv":49,
+     "Multiplier":2.37,
+     "%":"137%"
+  },
+  {
+     "Dish Lv":50,
+     "Multiplier":2.42,
+     "%":"142%"
+  }
+]
