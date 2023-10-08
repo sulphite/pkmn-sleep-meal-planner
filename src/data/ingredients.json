@@ -1,62 +1,62 @@
 [
   {
      "Name":"Large Leek",
-     "Base Strength":185
+     "Strength":185
   },
   {
      "Name":"Tasty Mushroom",
-     "Base Strength":167
+     "Strength":167
   },
   {
      "Name":"Fancy Egg",
-     "Base Strength":115
+     "Strength":115
   },
   {
      "Name":"Soft Potato",
-     "Base Strength":124
+     "Strength":124
   },
   {
      "Name":"Fancy Apple",
-     "Base Strength":90
+     "Strength":90
   },
   {
      "Name":"Fiery Herb",
-     "Base Strength":130
+     "Strength":130
   },
   {
      "Name":"Bean Sausage",
-     "Base Strength":103
+     "Strength":103
   },
   {
      "Name":"Moomoo Milk",
-     "Base Strength":98
+     "Strength":98
   },
   {
      "Name":"Honey",
-     "Base Strength":101
+     "Strength":101
   },
   {
      "Name":"Pure Oil",
-     "Base Strength":121
+     "Strength":121
   },
   {
      "Name":"Warming Ginger",
-     "Base Strength":109
+     "Strength":109
   },
   {
      "Name":"Snoozy Tomato",
-     "Base Strength":110
+     "Strength":110
   },
   {
      "Name":"Soothing Cacao",
-     "Base Strength":151
+     "Strength":151
   },
   {
      "Name":"Slowpoke Tail",
-     "Base Strength":342
+     "Strength":342
   },
   {
      "Name":"Greengrass Soybeans",
-     "Base Strength":100
+     "Strength":100
   }
 ]

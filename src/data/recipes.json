@@ -1,155 +1,162 @@
-[
-  {
-     "Dish":"Mixed Curry","Image":"","Base":0,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":null
-  },
-  {
-     "Dish":"Fancy Apple Curry","Image":"","Base":668,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":7,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":630
-  },
-  {
-     "Dish":"Grilled Tail Curry","Image":"","Base":7483,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":25,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":8,"Soybeans":null,"total base":5986
-  },
-  {
-     "Dish":"Solar Power Tomato Curry","Image":"","Base":1943,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":5,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":10,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1750
-  },
-  {
-     "Dish":"Dream Eater Butter Curry","Image":"","Base":9010,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":18,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":10,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":15,"Cacao":12,"Slowpoke Tail":null,"Soybeans":null,"total base":6674
-  },
-  {
-     "Dish":"Spicy Leek Curry","Image":"","Base":5900,"Leek":14,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":8,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":10,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":4720
-  },
-  {
-     "Dish":"Spore Mushroom Curry","Image":"","Base":4041,"Leek":null,"Mushroom":14,"Fancy Egg":null,"Soft Potato":9,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":3454
-  },
-  {
-     "Dish":"Egg Bomb Curry","Image":"","Base":4523,"Leek":null,"Mushroom":null,"Fancy Egg":8,"Soft Potato":4,"Apple":11,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":12,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":3858
-  },
-  {
-     "Dish":"Hearty Cheeseburger Curry","Image":"","Base":1785,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":8,"Milk":8,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1608
-  },
-  {
-     "Dish":"Soft Potato Chowder","Image":"","Base":3089,"Leek":null,"Mushroom":4,"Fancy Egg":null,"Soft Potato":8,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":10,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":2640
-  },
-  {
-     "Dish":"Simple Chowder","Image":"","Base":727,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":7,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":686
-  },
-  {
-     "Dish":"Beanburger Curry","Image":"","Base":764,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":7,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":721
-  },
-  {
-     "Dish":"Mild Honey Curry","Image":"","Base":749,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":7,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":707
-  },
-  {
-     "Dish":"Ninja Curry","Image":"","Base":6159,"Leek":9,"Mushroom":5,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":9,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":15,"total base":4927
-  },
-  {
-     "Dish":"Drought Katsu Curry","Image":"","Base":1815,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":10,"Milk":null,"Honey":null,"Pure Oil":5,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1635
-  },
-  {
-     "Dish":"Melty Omelette Curry","Image":"","Base":2009,"Leek":null,"Mushroom":null,"Fancy Egg":10,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":6,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1810
-  },
-  {
-     "Dish":"Bulk Up Bean Curry","Image":"","Base":3274,"Leek":null,"Mushroom":null,"Fancy Egg":4,"Soft Potato":null,"Apple":null,"Fiery Herb":4,"Sausage":6,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":12,"total base":2798
-  },
-  {
-     "Dish":"Mixed Salad","Image":"","Base":0,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":null
-  },
-  {
-     "Dish":"Slowpoke Tail Pepper Salad","Image":"","Base":8169,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":10,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":15,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":10,"Soybeans":null,"total base":6535
-  },
-  {
-     "Dish":"Spore Mushroom Salad","Image":"","Base":5859,"Leek":null,"Mushroom":17,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":8,"Ginger":null,"Tomato":8,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":4687
-  },
-  {
-     "Dish":"Snow Cloak Caesar Salad","Image":"","Base":1774,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":6,"Milk":10,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1598
-  },
-  {
-     "Dish":"Gluttony Potato Salad","Image":"","Base":5040,"Leek":null,"Mushroom":null,"Fancy Egg":9,"Soft Potato":14,"Apple":6,"Fiery Herb":null,"Sausage":7,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":4032
-  },
-  {
-     "Dish":"Water Veil Tofu Salad","Image":"","Base":1843,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":6,"Cacao":null,"Slowpoke Tail":null,"Soybeans":10,"total base":1660
-  },
-  {
-     "Dish":"Superpower Extreme Salad","Image":"","Base":2958,"Leek":null,"Mushroom":null,"Fancy Egg":5,"Soft Potato":3,"Apple":null,"Fiery Herb":null,"Sausage":9,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":6,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":2528
-  },
-  {
-     "Dish":"Bean Ham Salad","Image":"","Base":873,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":8,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":824
-  },
-  {
-     "Dish":"Snoozy Tomato Salad","Image":"","Base":933,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":8,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":880
-  },
-  {
-     "Dish":"Moomoo Caprese Salad","Image":"","Base":2856,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":12,"Honey":null,"Pure Oil":5,"Ginger":null,"Tomato":6,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":2441
-  },
-  {
-     "Dish":"Contrary Chocolate Meat Salad","Image":"","Base":3558,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":9,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":14,"Slowpoke Tail":null,"Soybeans":null,"total base":3041
-  },
-  {
-     "Dish":"Overheat Ginger Salad","Image":"","Base":5225,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":17,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":10,"Tomato":8,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":4180
-  },
-  {
-     "Dish":"Fancy Apple Salad","Image":"","Base":763,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":8,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":720
-  },
-  {
-     "Dish":"Immunity Leek Salad","Image":"","Base":2658,"Leek":10,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":5,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":2395
-  },
-  {
-     "Dish":"Dazzling Apple Cheese Salad","Image":"","Base":2578,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":15,"Fiery Herb":null,"Sausage":null,"Milk":5,"Honey":null,"Pure Oil":3,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":2203
-  },
-  {
-     "Dish":"Ninja Salad","Image":"","Base":10095,"Leek":15,"Mushroom":12,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":11,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":15,"total base":7478
-  },
-  {
-     "Dish":"Heat Wave Tofu Salad","Image":"","Base":1976,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":6,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":10,"total base":1780
-  },
-  {
-     "Dish":"Mixed Juice","Image":"","Base":0,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":null
-  },
-  {
-     "Dish":"Fluffy Sweet Potatoes","Image":"","Base":1783,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":9,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":5,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1606
-  },
-  {
-     "Dish":"Steadfast Ginger Cookies","Image":"","Base":4921,"Leek":null,"Mushroom":null,"Fancy Egg":4,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":14,"Pure Oil":null,"Ginger":12,"Tomato":null,"Cacao":5,"Slowpoke Tail":null,"Soybeans":null,"total base":3937
-  },
-  {
-     "Dish":"Fancy Apple Juice","Image":"","Base":763,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":8,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":720
-  },
-  {
-     "Dish":"Craft Soda Pop","Image":"","Base":964,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":9,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":909
-  },
-  {
-     "Dish":"Ember Ginger Tea","Image":"","Base":1788,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":7,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":9,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1611
-  },
-  {
-     "Dish":"Jigglypuff's Fruity Flan","Image":"","Base":7594,"Leek":null,"Mushroom":null,"Fancy Egg":15,"Soft Potato":null,"Apple":10,"Fiery Herb":null,"Sausage":null,"Milk":10,"Honey":20,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":5625
-  },
-  {
-     "Dish":"Lovely Kiss Smoothie","Image":"","Base":4734,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":11,"Fiery Herb":null,"Sausage":null,"Milk":9,"Honey":7,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":8,"Slowpoke Tail":null,"Soybeans":null,"total base":3787
-  },
-  {
-     "Dish":"Lucky Chant Apple Pie","Image":"","Base":1634,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":12,"Fiery Herb":null,"Sausage":null,"Milk":4,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1472
-  },
-  {
-     "Dish":"Neroli's Restorative Tea","Image":"","Base":5065,"Leek":null,"Mushroom":9,"Fancy Egg":null,"Soft Potato":null,"Apple":15,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":11,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":4052
-  },
-  {
-     "Dish":"Sweet Scent Chocolate Cake","Image":"","Base":3280,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":7,"Honey":9,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":8,"Slowpoke Tail":null,"Soybeans":null,"total base":2803
-  },
-  {
-     "Dish":"Warm Moomoo Milk","Image":"","Base":727,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":7,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":686
-  },
-  {
-     "Dish":"Cloud Nine Soy Cake","Image":"","Base":1798,"Leek":null,"Mushroom":null,"Fancy Egg":8,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":7,"total base":1620
-  },
-  {
-     "Dish":"Hustle Protein Smoothie","Image":"","Base":3168,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":8,"Slowpoke Tail":null,"Soybeans":15,"total base":2708
-  },
-  {
-     "Dish":"Stalwart Vegetable Juice","Image":"","Base":1798,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":7,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":9,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1620
-  },
-  {
-     "Dish":"Big Malasada","Image":"","Base":2927,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":7,"Honey":6,"Pure Oil":10,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":2502
-  },
-  {
-     "Dish":"Huge Power Soy Donuts","Image":"","Base":3213,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":9,"Ginger":null,"Tomato":null,"Cacao":7,"Slowpoke Tail":null,"Soybeans":6,"total base":2746
-  }
-]
+{
+  "curries": [
+    {
+      "Dish":"Mixed Curry","Image":"","Base":0,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":null
+    },
+    {
+      "Dish":"Fancy Apple Curry","Image":"","Base":668,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":7,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":630
+    },
+    {
+      "Dish":"Grilled Tail Curry","Image":"","Base":7483,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":25,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":8,"Soybeans":null,"total base":5986
+    },
+    {
+      "Dish":"Solar Power Tomato Curry","Image":"","Base":1943,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":5,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":10,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1750
+    },
+    {
+      "Dish":"Dream Eater Butter Curry","Image":"","Base":9010,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":18,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":10,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":15,"Cacao":12,"Slowpoke Tail":null,"Soybeans":null,"total base":6674
+    },
+    {
+      "Dish":"Spicy Leek Curry","Image":"","Base":5900,"Leek":14,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":8,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":10,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":4720
+    },
+    {
+      "Dish":"Spore Mushroom Curry","Image":"","Base":4041,"Leek":null,"Mushroom":14,"Fancy Egg":null,"Soft Potato":9,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":3454
+    },
+    {
+      "Dish":"Egg Bomb Curry","Image":"","Base":4523,"Leek":null,"Mushroom":null,"Fancy Egg":8,"Soft Potato":4,"Apple":11,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":12,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":3858
+    },
+    {
+      "Dish":"Hearty Cheeseburger Curry","Image":"","Base":1785,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":8,"Milk":8,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1608
+    },
+    {
+      "Dish":"Soft Potato Chowder","Image":"","Base":3089,"Leek":null,"Mushroom":4,"Fancy Egg":null,"Soft Potato":8,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":10,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":2640
+    },
+    {
+      "Dish":"Simple Chowder","Image":"","Base":727,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":7,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":686
+    },
+    {
+      "Dish":"Beanburger Curry","Image":"","Base":764,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":7,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":721
+    },
+    {
+      "Dish":"Mild Honey Curry","Image":"","Base":749,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":7,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":707
+    },
+    {
+      "Dish":"Ninja Curry","Image":"","Base":6159,"Leek":9,"Mushroom":5,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":9,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":15,"total base":4927
+    },
+    {
+      "Dish":"Drought Katsu Curry","Image":"","Base":1815,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":10,"Milk":null,"Honey":null,"Pure Oil":5,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1635
+    },
+    {
+      "Dish":"Melty Omelette Curry","Image":"","Base":2009,"Leek":null,"Mushroom":null,"Fancy Egg":10,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":6,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1810
+    },
+    {
+      "Dish":"Bulk Up Bean Curry","Image":"","Base":3274,"Leek":null,"Mushroom":null,"Fancy Egg":4,"Soft Potato":null,"Apple":null,"Fiery Herb":4,"Sausage":6,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":12,"total base":2798
+    }
+  ],
+  "salads": [
+    {
+      "Dish":"Mixed Salad","Image":"","Base":0,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":null
+    },
+    {
+      "Dish":"Slowpoke Tail Pepper Salad","Image":"","Base":8169,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":10,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":15,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":10,"Soybeans":null,"total base":6535
+    },
+    {
+      "Dish":"Spore Mushroom Salad","Image":"","Base":5859,"Leek":null,"Mushroom":17,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":8,"Ginger":null,"Tomato":8,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":4687
+    },
+    {
+      "Dish":"Snow Cloak Caesar Salad","Image":"","Base":1774,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":6,"Milk":10,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1598
+    },
+    {
+      "Dish":"Gluttony Potato Salad","Image":"","Base":5040,"Leek":null,"Mushroom":null,"Fancy Egg":9,"Soft Potato":14,"Apple":6,"Fiery Herb":null,"Sausage":7,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":4032
+    },
+    {
+      "Dish":"Water Veil Tofu Salad","Image":"","Base":1843,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":6,"Cacao":null,"Slowpoke Tail":null,"Soybeans":10,"total base":1660
+    },
+    {
+      "Dish":"Superpower Extreme Salad","Image":"","Base":2958,"Leek":null,"Mushroom":null,"Fancy Egg":5,"Soft Potato":3,"Apple":null,"Fiery Herb":null,"Sausage":9,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":6,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":2528
+    },
+    {
+      "Dish":"Bean Ham Salad","Image":"","Base":873,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":8,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":824
+    },
+    {
+      "Dish":"Snoozy Tomato Salad","Image":"","Base":933,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":8,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":880
+    },
+    {
+      "Dish":"Moomoo Caprese Salad","Image":"","Base":2856,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":12,"Honey":null,"Pure Oil":5,"Ginger":null,"Tomato":6,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":2441
+    },
+    {
+      "Dish":"Contrary Chocolate Meat Salad","Image":"","Base":3558,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":9,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":14,"Slowpoke Tail":null,"Soybeans":null,"total base":3041
+    },
+    {
+      "Dish":"Overheat Ginger Salad","Image":"","Base":5225,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":17,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":10,"Tomato":8,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":4180
+    },
+    {
+      "Dish":"Fancy Apple Salad","Image":"","Base":763,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":8,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":720
+    },
+    {
+      "Dish":"Immunity Leek Salad","Image":"","Base":2658,"Leek":10,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":5,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":2395
+    },
+    {
+      "Dish":"Dazzling Apple Cheese Salad","Image":"","Base":2578,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":15,"Fiery Herb":null,"Sausage":null,"Milk":5,"Honey":null,"Pure Oil":3,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":2203
+    },
+    {
+      "Dish":"Ninja Salad","Image":"","Base":10095,"Leek":15,"Mushroom":12,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":11,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":15,"total base":7478
+    },
+    {
+      "Dish":"Heat Wave Tofu Salad","Image":"","Base":1976,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":6,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":10,"total base":1780
+    }
+  ],
+  "desserts": [
+
+    {
+       "Dish":"Mixed Juice","Image":"","Base":0,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":null
+    },
+    {
+       "Dish":"Fluffy Sweet Potatoes","Image":"","Base":1783,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":9,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":5,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1606
+    },
+    {
+       "Dish":"Steadfast Ginger Cookies","Image":"","Base":4921,"Leek":null,"Mushroom":null,"Fancy Egg":4,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":14,"Pure Oil":null,"Ginger":12,"Tomato":null,"Cacao":5,"Slowpoke Tail":null,"Soybeans":null,"total base":3937
+    },
+    {
+       "Dish":"Fancy Apple Juice","Image":"","Base":763,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":8,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":720
+    },
+    {
+       "Dish":"Craft Soda Pop","Image":"","Base":964,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":9,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":909
+    },
+    {
+       "Dish":"Ember Ginger Tea","Image":"","Base":1788,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":7,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":9,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1611
+    },
+    {
+       "Dish":"Jigglypuff's Fruity Flan","Image":"","Base":7594,"Leek":null,"Mushroom":null,"Fancy Egg":15,"Soft Potato":null,"Apple":10,"Fiery Herb":null,"Sausage":null,"Milk":10,"Honey":20,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":5625
+    },
+    {
+       "Dish":"Lovely Kiss Smoothie","Image":"","Base":4734,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":11,"Fiery Herb":null,"Sausage":null,"Milk":9,"Honey":7,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":8,"Slowpoke Tail":null,"Soybeans":null,"total base":3787
+    },
+    {
+       "Dish":"Lucky Chant Apple Pie","Image":"","Base":1634,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":12,"Fiery Herb":null,"Sausage":null,"Milk":4,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1472
+    },
+    {
+       "Dish":"Neroli's Restorative Tea","Image":"","Base":5065,"Leek":null,"Mushroom":9,"Fancy Egg":null,"Soft Potato":null,"Apple":15,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":11,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":4052
+    },
+    {
+       "Dish":"Sweet Scent Chocolate Cake","Image":"","Base":3280,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":7,"Honey":9,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":8,"Slowpoke Tail":null,"Soybeans":null,"total base":2803
+    },
+    {
+       "Dish":"Warm Moomoo Milk","Image":"","Base":727,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":7,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":686
+    },
+    {
+       "Dish":"Cloud Nine Soy Cake","Image":"","Base":1798,"Leek":null,"Mushroom":null,"Fancy Egg":8,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":7,"total base":1620
+    },
+    {
+       "Dish":"Hustle Protein Smoothie","Image":"","Base":3168,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":null,"Cacao":8,"Slowpoke Tail":null,"Soybeans":15,"total base":2708
+    },
+    {
+       "Dish":"Stalwart Vegetable Juice","Image":"","Base":1798,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":7,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":null,"Ginger":null,"Tomato":9,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":1620
+    },
+    {
+       "Dish":"Big Malasada","Image":"","Base":2927,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":7,"Honey":6,"Pure Oil":10,"Ginger":null,"Tomato":null,"Cacao":null,"Slowpoke Tail":null,"Soybeans":null,"total base":2502
+    },
+    {
+       "Dish":"Huge Power Soy Donuts","Image":"","Base":3213,"Leek":null,"Mushroom":null,"Fancy Egg":null,"Soft Potato":null,"Apple":null,"Fiery Herb":null,"Sausage":null,"Milk":null,"Honey":null,"Pure Oil":9,"Ginger":null,"Tomato":null,"Cacao":7,"Slowpoke Tail":null,"Soybeans":6,"total base":2746
+    }
+  ]
+}
