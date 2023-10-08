@@ -1,3 +1,7 @@
+## Sources
+
+[this google sheet](https://docs.google.com/spreadsheets/d/1Jz_cyGVGxn0RDmUc9KK7LFvdS8kPUvIWHrj4UIU0ueY)
+
 # Svelte + TS + Vite
 
 This template should help get you started developing with Svelte and TypeScript in Vite.
