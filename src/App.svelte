@@ -3,23 +3,22 @@
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
   import recipes from "./data/recipes.json"
-  import { TabGroup, Tab, Table } from '@skeletonlabs/skeleton';
-  import { AppShell } from '@skeletonlabs/skeleton';
-    import Dish from './lib/Dish.svelte';
+  import ingredients from "./data/ingredients.json"
+  import { TabGroup, Tab, AppBar } from '@skeletonlabs/skeleton';
+  //import { AppShell } from '@skeletonlabs/skeleton';
+  import Dish from './lib/Dish.svelte';
 
   let tabSet: number = 0;
 </script>
 
+<AppBar>
+  <svelte:fragment slot="lead">(icon)</svelte:fragment>
+  <span>Pokemon Sleep dish strength calculator</span>
+  <svelte:fragment slot="trail">(actions)</svelte:fragment>
+</AppBar>
 <main>
-  <!-- <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div> -->
-  <h1>Pokemon Sleep dish strength calculator</h1>
+  <h2>Ingredient input</h2>
+
 
   <TabGroup>
     <Tab bind:group={tabSet} name="Curries" value={0}>
@@ -61,24 +60,11 @@
       </div>
     </svelte:fragment>
   </TabGroup>
-
-
 </main>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 </style>
