@@ -38,25 +38,21 @@
               <th class="table-cell-fit">Strength</th>
             </tr>
           </thead>
-        {#if tabSet === 0}
           <tbody>
-            {#each recipes.curries as curry}
-                <Dish dish={curry} />
-            {/each}
+            {#if tabSet === 0}
+                {#each recipes.curries as curry}
+                    <Dish dish={curry} />
+                {/each}
+            {:else if tabSet === 1}
+                {#each recipes.salads as salad}
+                  <Dish dish={salad} />
+                {/each}
+            {:else if tabSet === 2}
+                {#each recipes.desserts as dessert}
+                  <Dish dish={dessert} />
+                {/each}
+            {/if}
           </tbody>
-        {:else if tabSet === 1}
-          <tbody>
-            {#each recipes.salads as salad}
-              <Dish dish={salad} />
-            {/each}
-          </tbody>
-        {:else if tabSet === 2}
-          <tbody>
-            {#each recipes.desserts as dessert}
-              <Dish dish={dessert} />
-            {/each}
-          </tbody>
-        {/if}
         </table>
       </div>
     </svelte:fragment>
