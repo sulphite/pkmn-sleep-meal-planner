@@ -11,7 +11,7 @@
 <AppBar>
   <svelte:fragment slot="lead">(icon)</svelte:fragment>
   <span>Pokemon Sleep dish strength calculator</span>
-  <svelte:fragment slot="trail">(actions)</svelte:fragment>
+  <svelte:fragment slot="trail"><a href="http://github.com/sulphite">gh</a></svelte:fragment>
 </AppBar>
 <main>
   <h2>Ingredient input</h2>
