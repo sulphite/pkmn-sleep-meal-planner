@@ -10,25 +10,25 @@
   let tabSet: number = 0;
   let ingredientCounts: any = {};
   ingredients.forEach((item: Ingredient) => {
-    ingredientCounts = {...ingredientCounts, [item.Name]: 0};
+    ingredientCounts = {...ingredientCounts, [item.Name]: {count: 0, strength: item.Strength}};
   })
 
   const handleUpdate = (event: CustomEvent<{count: number; name: string}>) => {
     const {name, count} = event.detail;
-    ingredientCounts[name] = count;
+    ingredientCounts[name].count = count;
   }
 
-  const addTen = () => {
-    Object.keys(ingredientCounts).forEach(key => {ingredientCounts[key] += 10})
+  const addTen = ():void => {
+    Object.keys(ingredientCounts).forEach(key => {ingredientCounts[key].count += 10})
   }
 
-  const reset = () => {
-    Object.keys(ingredientCounts).forEach(key => {ingredientCounts[key] = 0})
+  const reset = ():void => {
+    Object.keys(ingredientCounts).forEach(key => {ingredientCounts[key].count = 0})
   }
 
   $: filteredRecipes = recipes.curries.filter((recipe: Recipe) => {
       return Object.keys(ingredientCounts).every(ingredient => {
-        return ingredientCounts[ingredient] >= recipe[ingredient]
+        return ingredientCounts[ingredient].count >= recipe[ingredient]
       })
     })
 
@@ -45,7 +45,7 @@
   <button type="button" class="btn variant-filled-primary" on:click={addTen}>+10 All</button>
   <div class="grid gap-4 grid-cols-3 md:grid-cols-5">
     {#each ingredients as ingredient}
-      <IngredientCounter on:updateCount={handleUpdate} {ingredient} />
+      <IngredientCounter on:updateCount={handleUpdate} {ingredient} count={ingredientCounts[ingredient.Name].count} />
     {/each}
   </div>
 

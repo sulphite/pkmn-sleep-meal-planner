@@ -5,7 +5,7 @@
   const dispatch = createEventDispatcher();
 
   export let ingredient: Ingredient;
-  export let count: number = 0;
+  export let count: number;
 
   const increment = (): void => {
     count++;
