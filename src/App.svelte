@@ -15,7 +15,7 @@
 </AppBar>
 <main>
   <h2>Ingredient input</h2>
-  <div class="grid gap-4 md:grid-cols-5">
+  <div class="grid gap-4 grid-cols-3 md:grid-cols-5">
     {#each ingredients as ingredient}
       <IngredientCounter {ingredient} />
     {/each}
