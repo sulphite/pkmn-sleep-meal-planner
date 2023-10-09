@@ -1,24 +1,27 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte";
+  import type { Ingredient } from "../types";
+
   const dispatch = createEventDispatcher();
 
+  export let ingredient: Ingredient;
   export let count: number = 0;
-  const increment = () => {
-    count++
-    updateCount()
+
+  const increment = (): void => {
+    count++;
+    updateCount();
   }
 
-  const updateCount = () => {
-    dispatch("updateCount", { name: ingredient.Name, count: Number(count) } )
+  const updateCount = (): void => {
+    dispatch("updateCount", { name: ingredient.Name, count: Number(count) } );
   }
 
-  const decrement = () => {
+  const decrement = (): void => {
     if (count > 0) {
-      count--
+      count--;
     }
-    updateCount()
+    updateCount();
   }
-  export let ingredient: any;
 </script>
 
 

@@ -4,18 +4,26 @@
   import { TabGroup, Tab, AppBar } from '@skeletonlabs/skeleton';
   import Dish from './lib/Dish.svelte';
   import IngredientCounter from "./lib/IngredientCounter.svelte";
+  import type { Ingredient, Recipe } from "./types";
 
+  let filteredRecipes: Recipe[]
   let tabSet: number = 0;
   let ingredientCounts: any = {};
-  ingredients.forEach(item => {
+  ingredients.forEach((item: Ingredient) => {
     ingredientCounts = {...ingredientCounts, [item.Name]: 0};
   })
 
   const handleUpdate = (event: CustomEvent<{count: number; name: string}>) => {
     const {name, count} = event.detail;
     ingredientCounts[name] = count;
-    console.log(ingredientCounts)
   }
+
+  $: filteredRecipes = recipes.curries.filter((recipe: Recipe) => {
+      return Object.keys(ingredientCounts).every(ingredient => {
+        return ingredientCounts[ingredient] >= recipe[ingredient]
+      })
+    })
+
 </script>
 
 <AppBar>
@@ -50,7 +58,7 @@
           </thead>
           <tbody>
             {#if tabSet === 0}
-                {#each recipes.curries as curry}
+                {#each filteredRecipes as curry}
                     <Dish dish={curry} />
                 {/each}
             {:else if tabSet === 1}
