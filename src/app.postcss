@@ -1,11 +1,13 @@
 /* Write your global styles here, in PostCSS syntax */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap');
 @tailwind base;
+
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 300;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -17,6 +19,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+:root [data-theme='skeleton'] {
+    --theme-font-family-base: 'Inter', sans-serif;
+    --theme-font-family-heading: 'Inter', sans-serif;
+    /* ... */
+  }
 
 a {
   font-weight: 500;
@@ -30,16 +38,17 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color:hsla(237,54%,24%,1);
+  background-color:hsla(201,0%,0%,1);
   background-image:
-  radial-gradient(at 88% 65%, hsla(337,33%,51%,0.4) 0px, transparent 50%),
-  radial-gradient(at 18% 100%, hsla(285,82%,74%,0.27) 0px, transparent 50%),
-  radial-gradient(at 33% 35%, hsla(337,41%,47%,0.4) 0px, transparent 50%),
-  radial-gradient(at 88% 29%, hsla(151,56%,60%,0.1) 0px, transparent 50%),
-  radial-gradient(at 66% 33%, hsla(354,67%,50%,0.2) 0px, transparent 50%);
+  radial-gradient(at 4% 0%, hsla(166,0%,0%,1) 0px, transparent 50%),
+  radial-gradient(at 76% 55%, hsla(235,63%,11%,1) 0px, transparent 50%),
+  radial-gradient(at 95% 91%, hsla(306,37%,27%,1) 0px, transparent 50%),
+  radial-gradient(at 16% 53%, hsla(225,100%,14%,1) 0px, transparent 50%),
+  radial-gradient(at 29% 0%, hsla(180,87%,17%,1) 0px, transparent 50%),
+  url(./assets/noise.svg);
 }
 
 h1 {
