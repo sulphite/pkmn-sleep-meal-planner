@@ -18,6 +18,14 @@
     ingredientCounts[name] = count;
   }
 
+  const addTen = () => {
+    Object.keys(ingredientCounts).forEach(key => {ingredientCounts[key] += 10})
+  }
+
+  const reset = () => {
+    Object.keys(ingredientCounts).forEach(key => {ingredientCounts[key] = 0})
+  }
+
   $: filteredRecipes = recipes.curries.filter((recipe: Recipe) => {
       return Object.keys(ingredientCounts).every(ingredient => {
         return ingredientCounts[ingredient] >= recipe[ingredient]
@@ -33,6 +41,8 @@
 </AppBar>
 <main>
   <h2 class="h2">Ingredient input</h2>
+  <button type="button" class="btn variant-filled-primary" on:click={reset}>Reset All</button>
+  <button type="button" class="btn variant-filled-primary" on:click={addTen}>+10 All</button>
   <div class="grid gap-4 grid-cols-3 md:grid-cols-5">
     {#each ingredients as ingredient}
       <IngredientCounter on:updateCount={handleUpdate} {ingredient} />
@@ -76,6 +86,7 @@
     </svelte:fragment>
   </TabGroup>
 </main>
+
 
 <style>
   main {
