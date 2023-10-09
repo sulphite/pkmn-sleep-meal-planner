@@ -1,11 +1,7 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
   import recipes from "./data/recipes.json"
   import ingredients from "./data/ingredients.json"
   import { TabGroup, Tab, AppBar } from '@skeletonlabs/skeleton';
-  //import { AppShell } from '@skeletonlabs/skeleton';
   import Dish from './lib/Dish.svelte';
 
   let tabSet: number = 0;
@@ -18,7 +14,19 @@
 </AppBar>
 <main>
   <h2>Ingredient input</h2>
+  <div class="grid gap-4 md:grid-cols-5">
+    {#each ingredients as ingredient}
+      <label class="label">
+        <span>{ingredient.Name}</span>
+        <div class="input-group input-group-divider grid-cols-[auto_1fr_auto]">
+          <div class="input-group-shim">-</div>
+          <input type="text" placeholder="0" />
+          <div class="input-group-shim">+</div>
+        </div>
+      </label>
 
+    {/each}
+  </div>
 
   <TabGroup>
     <Tab bind:group={tabSet} name="Curries" value={0}>
