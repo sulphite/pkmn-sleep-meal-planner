@@ -25,10 +25,14 @@
 <label class="label">
   <span>{ingredient.Name}</span>
   <div class="input-group grid-cols-3">
-    <button class="input-group-shim" on:click={decrement}>-</button>
+    <button class="input-group-shim"
+      aria-label="decrement value"
+      on:click={decrement} >-</button>
     <input type="text" inputmode="numeric" class="input text-center" bind:value={count}
       on:change={updateCount} />
-    <button class="input-group-shim" on:click={increment}>+</button>
+    <button class="input-group-shim"
+      aria-label="increment value"
+      on:click={increment}>+</button>
   </div>
 </label>
 

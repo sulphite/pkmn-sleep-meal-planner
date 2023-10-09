@@ -20,11 +20,11 @@
 
 <AppBar>
   <svelte:fragment slot="lead">(icon)</svelte:fragment>
-  <span>Pokemon Sleep dish strength calculator</span>
+  <span class="h3">Pokemon Sleep dish strength calculator</span>
   <svelte:fragment slot="trail"><a href="http://github.com/sulphite">gh</a></svelte:fragment>
 </AppBar>
 <main>
-  <h2>Ingredient input</h2>
+  <h2 class="h2">Ingredient input</h2>
   <div class="grid gap-4 grid-cols-3 md:grid-cols-5">
     {#each ingredients as ingredient}
       <IngredientCounter on:updateCount={handleUpdate} {ingredient} />
