@@ -1,13 +1,22 @@
 <script lang="ts">
-  let count: number = 0
+  import { createEventDispatcher } from "svelte";
+  const dispatch = createEventDispatcher();
+
+  export let count: number = 0;
   const increment = () => {
-    count += 1
+    count++
+    updateCount()
+  }
+
+  const updateCount = () => {
+    dispatch("updateCount", { name: ingredient.Name, count: Number(count) } )
   }
 
   const decrement = () => {
     if (count > 0) {
-      count -= 1
+      count--
     }
+    updateCount()
   }
   export let ingredient: any;
 </script>
@@ -17,7 +26,8 @@
   <span>{ingredient.Name}</span>
   <div class="input-group grid-cols-3">
     <button class="input-group-shim" on:click={decrement}>-</button>
-    <input type="text" inputmode="numeric" class="input text-center" bind:value={count} />
+    <input type="text" inputmode="numeric" class="input text-center" bind:value={count}
+      on:change={updateCount} />
     <button class="input-group-shim" on:click={increment}>+</button>
   </div>
 </label>

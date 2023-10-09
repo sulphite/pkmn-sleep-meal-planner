@@ -6,6 +6,16 @@
   import IngredientCounter from "./lib/IngredientCounter.svelte";
 
   let tabSet: number = 0;
+  let ingredientCounts: any = {};
+  ingredients.forEach(item => {
+    ingredientCounts = {...ingredientCounts, [item.Name]: 0};
+  })
+
+  const handleUpdate = (event: CustomEvent<{count: number; name: string}>) => {
+    const {name, count} = event.detail;
+    ingredientCounts[name] = count;
+    console.log(ingredientCounts)
+  }
 </script>
 
 <AppBar>
@@ -17,7 +27,7 @@
   <h2>Ingredient input</h2>
   <div class="grid gap-4 grid-cols-3 md:grid-cols-5">
     {#each ingredients as ingredient}
-      <IngredientCounter {ingredient} />
+      <IngredientCounter on:updateCount={handleUpdate} {ingredient} />
     {/each}
   </div>
 
