@@ -1,26 +1,17 @@
 <script lang="ts">
-  import { createEventDispatcher } from "svelte";
   import type { Ingredient } from "../types";
-
-  const dispatch = createEventDispatcher();
 
   export let ingredient: Ingredient;
   export let count: number;
 
   const increment = (): void => {
     count++;
-    updateCount();
-  }
-
-  const updateCount = (): void => {
-    dispatch("updateCount", { name: ingredient.Name, count: Number(count) } );
   }
 
   const decrement = (): void => {
     if (count > 0) {
       count--;
     }
-    updateCount();
   }
 </script>
 
@@ -31,8 +22,7 @@
     <button class="input-group-shim"
       aria-label="decrement value"
       on:click={decrement} >-</button>
-    <input type="text" inputmode="numeric" class="input text-center" bind:value={count}
-      on:change={updateCount} />
+    <input type="text" inputmode="numeric" class="input text-center" bind:value={count} />
     <button class="input-group-shim"
       aria-label="increment value"
       on:click={increment}>+</button>

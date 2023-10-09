@@ -13,11 +13,6 @@
     ingredientCounts = {...ingredientCounts, [item.Name]: {count: 0, strength: item.Strength}};
   })
 
-  const handleUpdate = (event: CustomEvent<{count: number; name: string}>) => {
-    const {name, count} = event.detail;
-    ingredientCounts[name].count = count;
-  }
-
   const addTen = ():void => {
     Object.keys(ingredientCounts).forEach(key => {ingredientCounts[key].count += 10})
   }
@@ -39,13 +34,15 @@
   <span class="h3">Pokemon Sleep dish strength calculator</span>
   <svelte:fragment slot="trail"><a href="http://github.com/sulphite">gh</a></svelte:fragment>
 </AppBar>
-<main>
+<main class="flex flex-col gap-4 py-4">
   <h2 class="h2">Ingredient input</h2>
-  <button type="button" class="btn variant-filled-primary" on:click={reset}>Reset All</button>
-  <button type="button" class="btn variant-filled-primary" on:click={addTen}>+10 All</button>
+  <div class="flex gap-4">
+    <button type="button" class="btn variant-filled-secondary" on:click={addTen}>+10 All</button>
+    <button type="button" class="btn variant-filled-tertiary" on:click={reset}>Reset All</button>
+  </div>
   <div class="grid gap-4 grid-cols-3 md:grid-cols-5">
     {#each ingredients as ingredient}
-      <IngredientCounter on:updateCount={handleUpdate} {ingredient} count={ingredientCounts[ingredient.Name].count} />
+      <IngredientCounter {ingredient} bind:count={ingredientCounts[ingredient.Name].count} />
     {/each}
   </div>
 
@@ -93,4 +90,6 @@
     max-width: 1000px;
     margin: 0 auto;
   }
+
+  h2 { font-weight: 200;}
 </style>
