@@ -4,11 +4,11 @@
   import { TabGroup, Tab, AppBar } from '@skeletonlabs/skeleton';
   import Dish from './lib/Dish.svelte';
   import IngredientCounter from "./lib/IngredientCounter.svelte";
-  import type { Ingredient, Recipe } from "./types";
+  import type { Ingredient, IngredientTotals, Recipe } from "./types";
 
-  let filteredRecipes: Recipe[]
+  let filteredRecipes: { curries: Recipe[], salads: Recipe[], desserts: Recipe[]}
   let tabSet: number = 0;
-  let ingredientCounts: any = {};
+  let ingredientCounts = {} as IngredientTotals;
   ingredients.forEach((item: Ingredient) => {
     ingredientCounts = {...ingredientCounts, [item.Name]: {count: 0, strength: item.Strength}};
   })
@@ -21,11 +21,19 @@
     Object.keys(ingredientCounts).forEach(key => {ingredientCounts[key].count = 0})
   }
 
-  $: filteredRecipes = recipes.curries.filter((recipe: Recipe) => {
-      return Object.keys(ingredientCounts).every(ingredient => {
-        return ingredientCounts[ingredient].count >= recipe[ingredient]
+  const filterByIngredients = (recipes: Recipe[], ingredientList: IngredientTotals): Recipe[] => {
+    return recipes.filter((recipe: Recipe) => {
+      return Object.keys(ingredientList).every(ingredient => {
+        return ingredientList[ingredient].count >= recipe[ingredient]
       })
     })
+  }
+
+  $: filteredRecipes = {
+    curries: filterByIngredients(recipes.curries, ingredientCounts),
+    salads: filterByIngredients(recipes.salads, ingredientCounts),
+    desserts: filterByIngredients(recipes.desserts, ingredientCounts)
+  }
 
 </script>
 
@@ -65,16 +73,16 @@
           </thead>
           <tbody>
             {#if tabSet === 0}
-                {#each filteredRecipes as curry}
-                    <Dish dish={curry} />
+                {#each filteredRecipes.curries as dish}
+                    <Dish {dish} />
                 {/each}
             {:else if tabSet === 1}
-                {#each recipes.salads as salad}
-                  <Dish dish={salad} />
+                {#each filteredRecipes.salads as dish}
+                  <Dish {dish} />
                 {/each}
             {:else if tabSet === 2}
-                {#each recipes.desserts as dessert}
-                  <Dish dish={dessert} />
+                {#each filteredRecipes.desserts as dish}
+                  <Dish {dish} />
                 {/each}
             {/if}
           </tbody>
