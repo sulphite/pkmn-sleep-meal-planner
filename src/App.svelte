@@ -8,6 +8,7 @@
 
   let filteredRecipes: { curries: Recipe[], salads: Recipe[], desserts: Recipe[]}
   let tabSet: number = 0;
+  let potSize: number = 50;
   let ingredientCounts = {} as IngredientTotals;
   ingredients.forEach((item: Ingredient) => {
     ingredientCounts = {...ingredientCounts, [item.Name]: {count: 0, strength: item.Strength}};
@@ -44,9 +45,15 @@
 </AppBar>
 <main class="flex flex-col gap-4 py-4">
   <h2 class="h2">Ingredient input</h2>
-  <div class="flex gap-4">
-    <button type="button" class="btn variant-filled-secondary" on:click={addTen}>+10 All</button>
-    <button type="button" class="btn variant-filled-tertiary" on:click={reset}>Reset All</button>
+  <div class="flex w-full justify-between gap-4">
+    <div class="flex gap-4">
+      <button type="button" class="btn variant-filled-secondary" on:click={addTen}>+10 All</button>
+      <button type="button" class="btn variant-filled-tertiary" on:click={reset}>Reset All</button>
+    </div>
+    <div class="flex gap-4">
+      <span>Pot Size:</span>
+      <input type="number" class="input" bind:value={potSize} >
+    </div>
   </div>
   <div class="grid gap-4 grid-cols-3 md:grid-cols-5">
     {#each ingredients as ingredient}
@@ -64,25 +71,26 @@
     <!-- Tab Panels --->
     <svelte:fragment slot="panel">
       <div class="table-container">
-        <table class="table table-hover">
+        <table class="table table-hover table-compact">
           <thead>
             <tr>
               <th>Name</th>
               <th class="table-cell-fit">Strength</th>
+              <th class="table-cell-fit">Calc. Str</th>
             </tr>
           </thead>
           <tbody>
             {#if tabSet === 0}
                 {#each filteredRecipes.curries as dish (dish["Dish"]) }
-                    <Dish {dish} />
+                    <Dish {dish} {ingredientCounts} />
                 {/each}
             {:else if tabSet === 1}
                 {#each filteredRecipes.salads as dish (dish["Dish"]) }
-                  <Dish {dish} />
+                  <Dish {dish} {ingredientCounts} />
                 {/each}
             {:else if tabSet === 2}
                 {#each filteredRecipes.desserts as dish (dish["Dish"]) }
-                  <Dish {dish} />
+                  <Dish {dish} {ingredientCounts} />
                 {/each}
             {/if}
           </tbody>
