@@ -1,5 +1,7 @@
 <script lang="ts">
-  export let dish: any;
+  import type { Recipe } from "../types";
+
+  export let dish: Recipe;
 </script>
 
 <tr>

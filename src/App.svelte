@@ -73,15 +73,15 @@
           </thead>
           <tbody>
             {#if tabSet === 0}
-                {#each filteredRecipes.curries as dish}
+                {#each filteredRecipes.curries as dish (dish["Dish"]) }
                     <Dish {dish} />
                 {/each}
             {:else if tabSet === 1}
-                {#each filteredRecipes.salads as dish}
+                {#each filteredRecipes.salads as dish (dish["Dish"]) }
                   <Dish {dish} />
                 {/each}
             {:else if tabSet === 2}
-                {#each filteredRecipes.desserts as dish}
+                {#each filteredRecipes.desserts as dish (dish["Dish"]) }
                   <Dish {dish} />
                 {/each}
             {/if}
