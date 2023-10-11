@@ -75,8 +75,9 @@
           <thead>
             <tr>
               <th>Name</th>
-              <th class="table-cell-fit">Strength</th>
-              <th class="table-cell-fit">Calc. Str</th>
+              <th>ingredients</th>
+              <th class="table-cell-fit table-sort-dsc">Strength</th>
+              <!-- <th class="table-cell-fit">Calc. Str</th> -->
             </tr>
           </thead>
           <tbody>
