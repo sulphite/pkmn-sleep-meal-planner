@@ -4,6 +4,8 @@
   export let ingredient: Ingredient;
   export let count: number;
 
+  const buttonClasses = "input-group-shim variant-glass-surface rounded-none"
+
   const increment = (): void => {
     count++;
   }
@@ -16,14 +18,14 @@
 </script>
 
 
-<label class="label">
-  <span>{ingredient.Name}</span>
-  <div class="input-group grid-cols-3">
-    <button class="input-group-shim"
+<label class="label"  >
+  <span class:opacity-50={count == 0} >{ingredient.Name}</span>
+  <div class="input-group variant-glass-surface grid-cols-3">
+    <button class={buttonClasses}
       aria-label="decrement value"
       on:click={decrement} >-</button>
-    <input type="text" inputmode="numeric" class="input text-center" bind:value={count} />
-    <button class="input-group-shim"
+    <input type="text" inputmode="numeric" class="input text-center variant-glass-surface rounded-none" class:opacity-50={count == 0} bind:value={count} />
+    <button class={buttonClasses}
       aria-label="increment value"
       on:click={increment}>+</button>
   </div>
@@ -32,7 +34,6 @@
 <style>
   button {
     font-size: 1.5rem;
-    border-radius: 0;
     padding: 0;
     justify-content: center;
     margin-top: -0.25em;
@@ -41,5 +42,9 @@
 
   button:hover {
     border:0;
+  }
+
+  input {
+    background: transparent;
   }
 </style>
