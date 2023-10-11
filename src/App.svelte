@@ -1,7 +1,7 @@
 <script lang="ts">
   import recipes from "./data/recipes.json"
   import ingredients from "./data/ingredients.json"
-  import { TabGroup, Tab, AppBar } from '@skeletonlabs/skeleton';
+  import { TabGroup, Tab, AppBar, setModeCurrent } from '@skeletonlabs/skeleton';
   import Dish from './lib/Dish.svelte';
   import IngredientCounter from "./lib/IngredientCounter.svelte";
   import type { Ingredient, IngredientTotals, Recipe } from "./types";
@@ -13,6 +13,10 @@
   ingredients.forEach((item: Ingredient) => {
     ingredientCounts = {...ingredientCounts, [item.Name]: {count: 0, strength: item.Strength}};
   })
+
+  const sortFn = (a: Recipe, b: Recipe) => {
+    return b.Base - a.Base
+  }
 
   const addTen = ():void => {
     Object.keys(ingredientCounts).forEach(key => {ingredientCounts[key].count += 10})
@@ -31,9 +35,9 @@
   }
 
   $: filteredRecipes = {
-    curries: filterByIngredients(recipes.curries, ingredientCounts),
-    salads: filterByIngredients(recipes.salads, ingredientCounts),
-    desserts: filterByIngredients(recipes.desserts, ingredientCounts)
+    curries: filterByIngredients(recipes.curries, ingredientCounts).sort(sortFn),
+    salads: filterByIngredients(recipes.salads, ingredientCounts).sort(sortFn),
+    desserts: filterByIngredients(recipes.desserts, ingredientCounts).sort(sortFn)
   }
 
 </script>
