@@ -18,7 +18,7 @@
 </script>
 
 
-<label class="label"  >
+<label class="label max-w-[80%] sm:max-w-full"  >
   <span class:opacity-50={count == 0} >{ingredient.Name}</span>
   <div class="input-group variant-glass-surface grid-cols-3">
     <button class={buttonClasses}

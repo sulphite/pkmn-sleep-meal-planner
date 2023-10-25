@@ -50,16 +50,16 @@
 <main class="flex flex-col gap-4 py-4">
   <h2 class="h2">Ingredient input</h2>
   <div class="flex w-full justify-between gap-4">
-    <div class="flex gap-4">
+    <div class="flex gap-4 flex-wrap">
       <button type="button" class="btn variant-filled-secondary" on:click={addTen}>+10 All</button>
       <button type="button" class="btn variant-filled-tertiary" on:click={reset}>Reset All</button>
     </div>
-    <div class="flex gap-4">
+    <div class="flex gap-4 hidden">
       <span>Pot Size:</span>
       <input type="number" class="input" bind:value={potSize} >
     </div>
   </div>
-  <div class="grid gap-4 grid-cols-3 md:grid-cols-5">
+  <div class="grid gap-4 grid-cols-2 md:grid-cols-5 justify-items-center">
     {#each ingredients as ingredient}
       <IngredientCounter {ingredient} bind:count={ingredientCounts[ingredient.Name].count} />
     {/each}
@@ -67,7 +67,6 @@
 
   <TabGroup>
     <Tab bind:group={tabSet} name="Curries" value={0}>
-      <!-- <svelte:fragment slot="lead">(icon)</svelte:fragment> -->
       <span>Curries</span>
     </Tab>
     <Tab bind:group={tabSet} name="Salads" value={1}>Salads</Tab>
@@ -81,7 +80,6 @@
               <th>Name</th>
               <th>ingredients</th>
               <th class="table-cell-fit table-sort-dsc">Strength</th>
-              <!-- <th class="table-cell-fit">Calc. Str</th> -->
             </tr>
           </thead>
           <tbody>
@@ -108,9 +106,16 @@
 
 <style>
   main {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 100vw;
+    padding: 0.5em;
   }
 
   h2 { font-weight: 200;}
+
+  @media (min-width: 800px) {
+    main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  }
 </style>
