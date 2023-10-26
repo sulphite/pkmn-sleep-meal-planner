@@ -14,7 +14,7 @@
   ingredients.forEach((item: Ingredient) => {
     ingredientCounts = {...ingredientCounts, [item.Name]: {count: 0, strength: item.Strength}};
   })
-  let selectedDish: Recipe | null = recipes.curries[3]
+  let selectedDish: Recipe | null = null
 
   const sortFn = (a: Recipe, b: Recipe) => {
     return b.Base - a.Base
@@ -100,7 +100,7 @@
             <tbody>
               {#if tabSet === 0}
                   {#each filteredRecipes.curries as dish (dish["Dish"]) }
-                      <Dish {dish} {ingredientCounts} {setSelected} />
+                    <Dish {dish} {ingredientCounts} {setSelected} />
                   {/each}
               {:else if tabSet === 1}
                   {#each filteredRecipes.salads as dish (dish["Dish"]) }
