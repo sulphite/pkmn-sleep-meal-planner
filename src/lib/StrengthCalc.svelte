@@ -2,6 +2,7 @@
   import type { Recipe } from "../types";
   import type { IngredientTotals } from "../types";
 
+  export let removeSelected: () => void;
   export let dish: Recipe;
   export let ingredientCounts: IngredientTotals;
 
@@ -15,7 +16,7 @@
   }, 0) + dish.Base - dish["total base"]
 </script>
 
-<button type="button" class="btn variant-filled-secondary">back</button>
+<button type="button" class="btn variant-filled-secondary" on:click={removeSelected}>back</button>
 <h2 class="h2">{dish.Dish}</h2>
 <h3 class="h3">base strength: {dish.Base}</h3>
 <h3 class="h3">strength: {totalStrength}</h3>

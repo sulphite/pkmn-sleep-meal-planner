@@ -28,6 +28,11 @@
     Object.keys(ingredientCounts).forEach(key => {ingredientCounts[key].count = 0})
   }
 
+  const removeSelected = ():void => {
+    console.log("clicked")
+    selectedDish = null;
+  }
+
   const filterByIngredients = (recipes: Recipe[], ingredientList: IngredientTotals): Recipe[] => {
     return recipes.filter((recipe: Recipe) => {
       return Object.keys(ingredientList).every(ingredient => {
@@ -68,7 +73,7 @@
   </div>
 
   {#if selectedDish}
-    <StrengthCalc dish={selectedDish} {ingredientCounts} />
+    <StrengthCalc dish={selectedDish} {ingredientCounts} {removeSelected} />
   {/if}
 
   <TabGroup>
