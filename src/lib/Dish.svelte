@@ -10,11 +10,6 @@
     return `${dish[item]} ${item}`
   })
 
-  // let strength: number;
-
-  // $: strength = Object.entries(ingredientCounts).reduce((total: number, ingredient) => {
-  //   return total + ingredient[1].count * ingredient[1].strength
-  // }, 0) + dish.Base - dish["total base"]
 </script>
 
 <tr transition:scale={{ duration: 500, delay: 0, opacity: 0, start: 0, easing: quintOut }}>
