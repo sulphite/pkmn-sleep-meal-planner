@@ -3,6 +3,7 @@
   import ingredients from "./data/ingredients.json"
   import { TabGroup, Tab, AppBar, setModeCurrent } from '@skeletonlabs/skeleton';
   import Dish from './lib/Dish.svelte';
+  import StrengthCalc from "./lib/StrengthCalc.svelte";
   import IngredientCounter from "./lib/IngredientCounter.svelte";
   import type { Ingredient, IngredientTotals, Recipe } from "./types";
 
@@ -13,6 +14,7 @@
   ingredients.forEach((item: Ingredient) => {
     ingredientCounts = {...ingredientCounts, [item.Name]: {count: 0, strength: item.Strength}};
   })
+  let selectedDish: Recipe | null = recipes.curries[3]
 
   const sortFn = (a: Recipe, b: Recipe) => {
     return b.Base - a.Base
@@ -64,6 +66,10 @@
       <IngredientCounter {ingredient} bind:count={ingredientCounts[ingredient.Name].count} />
     {/each}
   </div>
+
+  {#if selectedDish}
+    <StrengthCalc dish={selectedDish} {ingredientCounts} />
+  {/if}
 
   <TabGroup>
     <Tab bind:group={tabSet} name="Curries" value={0}>
