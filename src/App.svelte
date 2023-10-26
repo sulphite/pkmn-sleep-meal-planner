@@ -28,8 +28,11 @@
     Object.keys(ingredientCounts).forEach(key => {ingredientCounts[key].count = 0})
   }
 
+  const setSelected = (dish: Recipe): void => {
+    selectedDish = dish;
+  }
+
   const removeSelected = ():void => {
-    console.log("clicked")
     selectedDish = null;
   }
 
@@ -74,44 +77,46 @@
 
   {#if selectedDish}
     <StrengthCalc dish={selectedDish} {ingredientCounts} {removeSelected} />
-  {/if}
 
-  <TabGroup>
-    <Tab bind:group={tabSet} name="Curries" value={0}>
-      <span>Curries</span>
-    </Tab>
-    <Tab bind:group={tabSet} name="Salads" value={1}>Salads</Tab>
-    <Tab bind:group={tabSet} name="Desserts" value={2}>Desserts</Tab>
-    <!-- Tab Panels --->
-    <svelte:fragment slot="panel">
-      <div class="table-container">
-        <table class="table table-hover table-compact">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>ingredients</th>
-              <th class="table-cell-fit table-sort-dsc">Strength</th>
-            </tr>
-          </thead>
-          <tbody>
-            {#if tabSet === 0}
-                {#each filteredRecipes.curries as dish (dish["Dish"]) }
-                    <Dish {dish} {ingredientCounts} />
-                {/each}
-            {:else if tabSet === 1}
-                {#each filteredRecipes.salads as dish (dish["Dish"]) }
-                  <Dish {dish} {ingredientCounts} />
-                {/each}
-            {:else if tabSet === 2}
-                {#each filteredRecipes.desserts as dish (dish["Dish"]) }
-                  <Dish {dish} {ingredientCounts} />
-                {/each}
-            {/if}
-          </tbody>
-        </table>
-      </div>
-    </svelte:fragment>
-  </TabGroup>
+  {:else}
+    <TabGroup>
+      <Tab bind:group={tabSet} name="Curries" value={0}>
+        <span>Curries</span>
+      </Tab>
+      <Tab bind:group={tabSet} name="Salads" value={1}>Salads</Tab>
+      <Tab bind:group={tabSet} name="Desserts" value={2}>Desserts</Tab>
+      <!-- Tab Panels --->
+      <svelte:fragment slot="panel">
+        <div class="table-container">
+          <table class="table table-hover table-compact">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>ingredients</th>
+                <th class="table-cell-fit table-sort-dsc">Strength</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {#if tabSet === 0}
+                  {#each filteredRecipes.curries as dish (dish["Dish"]) }
+                      <Dish {dish} {ingredientCounts} {setSelected} />
+                  {/each}
+              {:else if tabSet === 1}
+                  {#each filteredRecipes.salads as dish (dish["Dish"]) }
+                    <Dish {dish} {ingredientCounts} {setSelected} />
+                  {/each}
+              {:else if tabSet === 2}
+                  {#each filteredRecipes.desserts as dish (dish["Dish"]) }
+                    <Dish {dish} {ingredientCounts} {setSelected} />
+                  {/each}
+              {/if}
+            </tbody>
+          </table>
+        </div>
+      </svelte:fragment>
+    </TabGroup>
+  {/if}
 </main>
 
 
