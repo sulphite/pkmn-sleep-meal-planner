@@ -19,7 +19,9 @@
 
 
 <label class="label max-w-[80%] sm:max-w-full"  >
-  <span class:opacity-50={count == 0} >{ingredient.Name}</span>
+  <span class:opacity-50={count == 0} >{ingredient.Name}
+    <span class:opacity-50={count == 0} class="badge variant-ringed-surface">{ingredient.Strength}</span>
+  </span>
   <div class="input-group variant-glass-surface grid-cols-3">
     <button class={buttonClasses}
       aria-label="decrement value"
@@ -42,6 +44,19 @@
 
   button:hover {
     border:0;
+  }
+
+  label > span {
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+  }
+
+  span > span {
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0;
+    font-size: 0.6rem;
+
   }
 
   input {
