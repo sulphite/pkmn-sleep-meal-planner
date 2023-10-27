@@ -14,8 +14,8 @@
   })
 
   const strScale = spring(1,{
-			stiffness: 0.1,
-			damping: 0.1
+			stiffness: 0.5,
+			damping: 0.25
 		})
 
   let totalStrength: number;

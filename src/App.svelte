@@ -40,14 +40,9 @@
   };
 
   const reset = (): void => {
-    if(selectedDish) {
-      Object.keys(ingredientCounts).forEach((key) => {
-        ingredientCounts[key].count = selectedDish[key];
-    })} else {
-      Object.keys(ingredientCounts).forEach((key) => {
-        ingredientCounts[key].count = 0;
-      });
-    }
+    Object.keys(ingredientCounts).forEach((key) => {
+      ingredientCounts[key].count = selectedDish ? selectedDish[key] : 0
+    })
   };
 
   const setSelected = (dish: Recipe): void => {
