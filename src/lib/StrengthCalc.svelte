@@ -5,6 +5,7 @@
   import { quintInOut } from "svelte/easing";
   import { spring } from "svelte/motion";
   import multiplierData from "../data/dish_lvl_strength.json";
+  import { RadioGroup, RadioItem } from "@skeletonlabs/skeleton";
 
   export let removeSelected: () => void;
   export let dish: Recipe;
@@ -33,37 +34,37 @@
 </script>
 
 <div in:fly={{x: 1000, delay: 500 }} out:fly={{x: 1000, duration: 500, easing: quintInOut }} class="flex flex-col gap-4 py-4 w-full">
-  <div class=" w-full flex justify-between align-center">
-    <h2 class="h2 handwritten">{dish.Dish}
-      <span class="badge variant-ringed-secondary" style="font-family: Inter; ">base: {dish.Base}</span>
-    </h2>
+  <div class=" w-full flex justify-between items-center">
+    <h3 class="h3"><span class="font-bold text-primary-500">{totalIngredients}</span> ingredients in the pot</h3>
     <button type="button" class="btn-icon variant-filled-primary" on:click={removeSelected}>←</button>
   </div>
-  <div class="grid md:grid-cols-2">
-    <div>
+
+  <div class="grid md:grid-cols-2 gap-4">
+    <div class="card variant-soft-surface">
+      <h2 class="h2 handwritten">{dish.Dish}
+        <!-- <span class="badge variant-ringed-secondary" style="font-family: Inter; ">base: {dish.Base}</span> -->
+      </h2>
+      <label>
+        <span class="tracking-wider">level:</span>
+        <input type="number" class="input text-center variant-glass-surface w-fit" min="1" max="50" bind:value={dishLevel}>
+      </label>
       <p class="italic">{ingredientList.join(", ")}</p>
-      <label class="label max-w-[80px]">
-        <span>level:</span>
-        <input type="number" class="input text-center variant-glass-surface" min="1" max="50" bind:value={dishLevel}>
-      </label>
-      <label class="label max-w-[80px]">
-        <span>extra tasty:</span>
-        <input type="number" class="input text-center variant-glass-surface" min="1" max="3" bind:value={tastyMultiplier}>
-      </label>
-      <h3 class="h3">{totalIngredients} ingredients in the pot</h3>
     </div>
+
     <div class="overflow-x-clip">
-      <p>strength:</p>
-      <h3 class="h3 font-medium" style="transform: scale({$strScale}); transform-origin: 0 0">{totalStrength}</h3>
+      <span class="tracking-wider">extra tasty?</span>
+      <RadioGroup active="variant-filled-primary">
+        <RadioItem bind:group={tastyMultiplier} name="justify" value={1}>x1</RadioItem>
+        <RadioItem bind:group={tastyMultiplier} name="justify" value={2}>x2</RadioItem>
+        <RadioItem bind:group={tastyMultiplier} name="justify" value={3}>x3</RadioItem>
+      </RadioGroup>
+      <p class="tracking-wider">strength:</p>
+      <h3 class="h3 font-semibold" style="transform: scale({$strScale}); transform-origin: 0 0">{totalStrength}</h3>
     </div>
   </div>
 </div>
 
 <style>
-  label span {
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
 
   .handwritten {
     font-family: "Short Stack";

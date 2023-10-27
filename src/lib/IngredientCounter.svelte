@@ -56,6 +56,7 @@
     font-style: italic;
     letter-spacing: 0;
     font-size: 0.6rem;
+
   }
 
   input {
