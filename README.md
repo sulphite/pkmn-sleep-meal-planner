@@ -13,6 +13,7 @@ This is a tool for looking up recipes for Pokemon Sleep, the mobile game/sleep t
 ## Upcoming features:
 
 - mobile UI
+- disable ingredients you don't have
 - illustrations?
 
 ### Sources
