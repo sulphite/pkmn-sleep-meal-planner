@@ -25,3 +25,9 @@
     <button class="btn-icon variant-filled-primary" on:click={handleClick}>-></button>
   </td>
 </tr>
+
+<style>
+  tr td {
+    vertical-align: middle;
+  }
+</style>
