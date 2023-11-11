@@ -1,8 +1,10 @@
 <script lang="ts">
   import type { Ingredient } from "../types";
 
+
   export let ingredient: Ingredient;
   export let count: number;
+  export let src: string;
 
   const buttonClasses = "input-group-shim variant-glass-surface rounded-none"
 
@@ -22,6 +24,7 @@
   <span class:opacity-50={count == 0} >{ingredient.Name}
     <span class:opacity-50={count == 0} class="badge variant-ringed-surface">{ingredient.Strength}</span>
   </span>
+  <img src={src} alt="{ingredient.Name}">
   <div class="input-group variant-glass-surface grid-cols-3">
     <button class={buttonClasses}
       aria-label="decrement value"
@@ -40,6 +43,10 @@
     justify-content: center;
     margin-top: -0.25em;
     border: 0
+  }
+
+  img {
+    max-width: 80px;
   }
 
   button:hover {

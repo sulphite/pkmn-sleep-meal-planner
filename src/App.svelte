@@ -10,6 +10,7 @@
   import Dish from "./lib/Dish.svelte";
   import StrengthCalc from "./lib/StrengthCalc.svelte";
   import IngredientCounter from "./lib/IngredientCounter.svelte";
+  import images from "./assets/ingredients/imageMap.json"
   import type { Ingredient, IngredientTotals, Recipe } from "./types";
   import { fly } from "svelte/transition";
 
@@ -104,6 +105,7 @@
     {#each ingredients as ingredient}
       <IngredientCounter
         {ingredient}
+        src={images[ingredient.Name]}
         bind:count={ingredientCounts[ingredient.Name].count}
       />
     {/each}
