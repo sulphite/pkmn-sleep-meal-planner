@@ -6,7 +6,7 @@
   export let count: number;
   export let src: string;
 
-  const buttonClasses = "input-group-shim variant-glass-surface rounded-none"
+  const buttonClasses = "btn-icon btn-icon-sm variant-soft-surface"
 
   const increment = (): void => {
     count++;
@@ -21,15 +21,15 @@
 
 
 <label class="label max-w-[80%] sm:max-w-full"  >
+  <img src={src} alt="{ingredient.Name}" class="opacity-80" class:opacity-30={count == 0}>
   <span class:opacity-50={count == 0} >{ingredient.Name}
     <span class:opacity-50={count == 0} class="badge variant-ringed-surface">{ingredient.Strength}</span>
   </span>
-  <img src={src} alt="{ingredient.Name}">
-  <div class="input-group variant-glass-surface grid-cols-3">
+  <input type="number" class="input text-center rounded-none" class:opacity-50={count == 0} bind:value={count} />
+  <div class="">
     <button class={buttonClasses}
       aria-label="decrement value"
       on:click={decrement} >-</button>
-    <input type="text" inputmode="numeric" class="input text-center variant-glass-surface rounded-none" class:opacity-50={count == 0} bind:value={count} />
     <button class={buttonClasses}
       aria-label="increment value"
       on:click={increment}>+</button>
@@ -39,14 +39,15 @@
 <style>
   button {
     font-size: 1.5rem;
-    padding: 0;
-    justify-content: center;
-    margin-top: -0.25em;
-    border: 0
+    z-index: 11;
+    border: 0;
   }
 
   img {
     max-width: 80px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 0.5em;
   }
 
   button:hover {
@@ -56,6 +57,8 @@
   label > span {
     letter-spacing: 1px;
     font-size: 0.75rem;
+    z-index: 10;
+    position: relative;
   }
 
   span > span {
@@ -68,5 +71,7 @@
 
   input {
     background: transparent;
+    border: none;
+    font-size: 1.5rem;
   }
 </style>

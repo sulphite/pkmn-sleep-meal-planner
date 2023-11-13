@@ -46,7 +46,7 @@
       </h2>
       <label>
         <span class="tracking-wider">level:</span>
-        <input type="number" class="input text-center variant-glass-surface w-fit" min="1" max="50" bind:value={dishLevel}>
+        <input type="number" class="text-center w-fit border-0" min="1" max="50" bind:value={dishLevel}>
       </label>
       <p class="italic">{ingredientList.join(", ")}</p>
     </div>
@@ -68,5 +68,10 @@
 
   .handwritten {
     font-family: "Short Stack";
+  }
+
+  input {
+    background-color: transparent;
+    font-weight: 700;
   }
 </style>

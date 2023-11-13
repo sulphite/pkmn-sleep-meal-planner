@@ -78,7 +78,7 @@
 
 <AppBar>
   <svelte:fragment slot="lead">(icon)</svelte:fragment>
-  <span class="h3">Pokemon Sleep dish strength calculator</span>
+  <span class="h3 handwritten">Pokemon Sleep dish strength calculator</span>
   <svelte:fragment slot="trail"
     ><a href="http://github.com/sulphite">gh</a></svelte:fragment
   >
@@ -171,5 +171,9 @@
       max-width: 1000px;
       margin: 0 auto;
     }
+  }
+
+  .handwritten {
+    font-family: "Short Stack";
   }
 </style>
