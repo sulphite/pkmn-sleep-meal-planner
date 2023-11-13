@@ -33,7 +33,7 @@
   $: strScale.set(1 + totalStrength/10000)
 </script>
 
-<div in:fly={{x: 1000, delay: 500 }} out:fly={{x: 1000, duration: 500, easing: quintInOut }} class="flex flex-col gap-4 py-4 w-full">
+<div in:fly={{x: 1000, delay: 500 }} out:fly={{x: 1000, duration: 500, easing: quintInOut }} class="flex flex-col gap-4 pb-4 w-full">
   <div class=" w-full flex justify-between items-center">
     <h3 class="h3"><span class="font-bold text-primary-500">{totalIngredients}</span> ingredients in the pot</h3>
     <button type="button" class="btn-icon variant-filled-primary" on:click={removeSelected}>←</button>

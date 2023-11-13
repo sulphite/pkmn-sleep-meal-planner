@@ -84,18 +84,8 @@
   >
 </AppBar>
 <main class="flex flex-col gap-4 py-4">
-  <h2 class="h2">Ingredient input</h2>
-  <div class="flex w-full justify-between gap-4">
-    <div class="flex gap-4 flex-wrap">
-      <button
-        type="button"
-        class="btn variant-filled-secondary"
-        on:click={addTen}>+10 All</button
-      >
-      <button type="button" class="btn variant-filled-tertiary" on:click={reset}
-        >Reset All</button
-      >
-    </div>
+  <h2 class="h2 pt-4">your ingredients</h2>
+  <div class="hidden flex w-full justify-between gap-4">
     <div class="flex gap-4 hidden">
       <span>Pot Size:</span>
       <input type="number" class="input" bind:value={potSize} />
@@ -109,6 +99,20 @@
         bind:count={ingredientCounts[ingredient.Name].count}
       />
     {/each}
+  </div>
+  <div class="flex gap-4 flex-wrap">
+    <button
+      type="button"
+      class="btn variant-filled-secondary"
+      on:click={addTen}>
+      +10 All
+    </button>
+    <button
+      type="button"
+      class="btn variant-filled-tertiary"
+      on:click={reset} >
+      Reset All
+    </button>
   </div>
 
   {#if selectedDish}
