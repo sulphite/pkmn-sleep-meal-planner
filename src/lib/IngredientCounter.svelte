@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { Ingredient } from "../types";
 
-
   export let ingredient: Ingredient;
   export let count: number;
   export let src: string;
@@ -17,11 +16,12 @@
       count--;
     }
   }
+
 </script>
 
 
 <label class="label max-w-[80%] sm:max-w-full"  >
-  <img src={src} alt="{ingredient.Name}" class="opacity-80" class:opacity-30={count == 0}>
+    <img src={src} alt="{ingredient.Name}" class="opacity-80" class:opacity-30={count == 0}>
   <span class:opacity-50={count == 0} >{ingredient.Name}
     <span class:opacity-50={count == 0} class="badge variant-ringed-surface">{ingredient.Strength}</span>
   </span>
