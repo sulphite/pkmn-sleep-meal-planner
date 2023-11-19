@@ -73,5 +73,7 @@
     background: transparent;
     border: none;
     font-size: 1.5rem;
+    z-index: 10;
+    position: relative;
   }
 </style>
