@@ -15,6 +15,8 @@ This is a tool for looking up recipes for Pokemon Sleep, the mobile game/sleep t
 - disable ingredients you don't have
 - illustrations?
 
-### Sources
+Please get in touch if theres a feature you want to see!
+
+## Sources
 
 Most of the data used comes from [this google sheet](https://docs.google.com/spreadsheets/d/1Jz_cyGVGxn0RDmUc9KK7LFvdS8kPUvIWHrj4UIU0ueY)
