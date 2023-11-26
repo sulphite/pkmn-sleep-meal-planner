@@ -1,5 +1,5 @@
 
-![image](https://github.com/sulphite/pkmn-sleep-meal-planner/assets/49396588/acaf7666-98fb-43bd-8a48-27647479bae3)
+![image](https://github.com/sulphite/pkmn-sleep-meal-planner/assets/49396588/051076ec-323c-4350-96b3-87eca36c1130)
 
 This is a tool for looking up recipes for Pokemon Sleep, the mobile game/sleep tracker, and calculating the actual strength of dishes created. But honestly it is also just a fun way for me to try out Svelte.
 
@@ -12,7 +12,6 @@ This is a tool for looking up recipes for Pokemon Sleep, the mobile game/sleep t
 
 ## Upcoming features:
 
-- mobile UI
 - disable ingredients you don't have
 - illustrations?
 
